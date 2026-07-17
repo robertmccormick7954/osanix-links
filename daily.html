@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Osanix — Daily Work Plan (VA)</title>
+<style>
+  :root{--bg:#0f141b;--card:#171f29;--card2:#1e2833;--line:#2a3846;--ink:#e8eef4;--dim:#93a4b5;--brand:#3a91c7;--pink:#ef5aa0;--grn:#28c081;--amber:#f0a726}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:820px;margin:0 auto;padding:26px 16px 70px}
+  h1{font-size:24px;margin:0 0 4px;letter-spacing:-.02em}
+  .mk{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#22557a,#14324a);color:#fff;font-weight:900;font-size:14px;vertical-align:middle;margin-right:8px}
+  .mk i{color:var(--pink);font-style:normal}
+  p.sub{color:var(--dim);margin:0 0 8px}
+  .toc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:18px 0}
+  .toc a{color:var(--brand);text-decoration:none;font-size:14.5px;display:inline-block;margin:3px 14px 3px 0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 20px 16px;margin:0 0 18px}
+  .card h2{font-size:18px;margin:0 0 4px;display:flex;align-items:center;gap:9px}
+  .step{width:24px;height:24px;border-radius:50%;background:var(--brand);color:#fff;display:inline-grid;place-items:center;font-size:13px;font-weight:800;flex:0 0 auto}
+  h3{font-size:15px;margin:16px 0 6px;color:var(--pink)}
+  ol,ul{margin:8px 0;padding-left:22px}
+  li{margin:5px 0}
+  code,.mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13.5px;background:var(--card2);padding:1px 6px;border-radius:5px;color:#ffd9ec}
+  .rule{background:var(--card2);border-left:3px solid var(--amber);border-radius:8px;padding:10px 14px;margin:8px 0;font-size:14.5px}
+  .warn{border-left-color:#e05252}
+  .ok{border-left-color:var(--grn)}
+  table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--dim);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+  td code{word-break:break-all}
+  .tag{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;background:#26374a;color:#bcd3e6;margin-right:6px}
+  .blk{white-space:pre-wrap;background:#131b24;border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:8px 0;font-size:14px;color:#cdd9e4}
+  .cbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:10px}
+  .cbar .lbl{font-size:12.5px;color:var(--dim)}
+  button.copy{background:var(--brand);color:#fff;border:0;border-radius:8px;padding:8px 14px;font-weight:700;font-size:13px;cursor:pointer;white-space:nowrap;transition:.15s}
+  button.copy:hover{filter:brightness(1.1)} button.copy.ok{background:var(--grn)}
+  .pill{display:inline-block;font-size:12px;font-weight:800;padding:3px 10px;border-radius:20px;background:linear-gradient(135deg,#22557a,#14324a);color:#cfe6f6;margin-left:8px}
+  .chk{list-style:none;padding-left:0}
+  .chk li{padding:6px 0 6px 30px;position:relative;border-bottom:1px dashed var(--line)}
+  .chk li:before{content:"☐";position:absolute;left:4px;top:5px;color:var(--brand);font-size:16px}
+  .foot{color:var(--dim);font-size:12.5px;margin-top:24px;text-align:center;line-height:1.7}
+  a.blue{color:var(--brand)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1><span class="mk">O<i>x</i></span> Osanix — Daily Work Plan <span class="pill">≈ 5–6 hours</span></h1>
+  <p class="sub">Your day, start to finish. Five blocks, in order. <b>You never write anything yourself</b> — everything is pre-written here; you copy, paste, post and log. When you run low on articles, message Dominic and he refills the queue.</p>
+  <p class="sub">Article publishing lives in the <a class="blue" href="./">Link-Building Guide →</a> (that is Block A). This page adds the other four blocks so your whole day is covered.</p>
+
+  <div class="toc">
+    <a href="#how">How to use this</a>
+    <a href="#rhythm">The daily rhythm</a>
+    <a href="#rules">Golden rules</a>
+    <a href="#a">A · Publish 2 articles</a>
+    <a href="#b">B · Engagement</a>
+    <a href="#c">C · Bookmarking</a>
+    <a href="#d">D · Pinterest</a>
+    <a href="#e">E · Prospect + rank + log</a>
+    <a href="#done">End-of-day checklist</a>
+  </div>
+
+  <div class="card" id="how">
+    <h2><span class="step">i</span> How to use this</h2>
+    <ul>
+      <li>Work the five blocks <b>top to bottom</b>. Each block tells you exactly what to do and gives you the exact text to paste (grey boxes = one-click <b>Copy</b>).</li>
+      <li>This is a marathon, not a sprint. <b>Doing the plan every day beats doing double one day and nothing the next.</b> Google trusts steady, natural activity.</li>
+      <li>If a site blocks you, asks for a phone number, or removes your post — skip it, note it in the log, move to the next one. Never fight a platform.</li>
+      <li>Everything you post must be <b>honest and helpful</b>. Read the Golden Rules once before you start.</li>
+    </ul>
+  </div>
+
+  <div class="card" id="rhythm">
+    <h2><span class="step">⏱</span> The daily rhythm</h2>
+    <table>
+      <thead><tr><th>Block</th><th>Time</th><th>What</th><th>Target / day</th></tr></thead>
+      <tbody>
+        <tr><td><b>A</b></td><td>~1h20</td><td>Publish 2 Web-2.0 articles (the Guide)</td><td>2 backlinks</td></tr>
+        <tr><td><b>B</b></td><td>~1h30</td><td>Community engagement (Q&amp;A / forums)</td><td>4–6 helpful replies</td></tr>
+        <tr><td><b>C</b></td><td>~0h45</td><td>Social bookmarking + profiles</td><td>8–10 saves</td></tr>
+        <tr><td><b>D</b></td><td>~0h45</td><td>Pinterest pins</td><td>5 pins</td></tr>
+        <tr><td><b>E</b></td><td>~0h45</td><td>Prospect + rank-check + update log</td><td>list + log done</td></tr>
+      </tbody>
+    </table>
+    <p class="sub" style="margin-top:8px">≈ 5h15–5h45 of focused work. Take normal breaks between blocks.</p>
+  </div>
+
+  <div class="card" id="rules">
+    <h2><span class="step">!</span> Golden rules — read once, follow always</h2>
+    <div class="rule warn"><b>Velocity:</b> Never more than the plan. <b>2 articles a day, maximum.</b> Do not dump 15 links in one day — a sudden spike looks fake to Google and can get the whole site penalised. Slow and steady wins.</div>
+    <div class="rule warn"><b>Be a real, helpful person — never an advert.</b> NEVER invent results ("I lost 8 kg in 3 weeks"), fake reviews, or medical promises. Osanix is a <b>food supplement, not a medicine</b>, and it is <b>not</b> Ozempic. Keep everything measured and honest. This protects the site from bans.</div>
+    <div class="rule"><b>Links come second, help comes first.</b> Answer the person's question properly. Add a link <b>only</b> where it genuinely fits and where the site allows links. If a forum bans links or you're unsure — <b>post the helpful reply with no link.</b> Max one link per post. Never use the same anchor text twice in a day.</div>
+    <div class="rule"><b>Never write "we are not the official seller/site."</b> Just point people to the official store as the safe place to buy (real product + 30-day money-back). That wording is enough.</div>
+    <div class="rule ok"><b>Log everything</b> in Block E. If it isn't logged, it didn't happen — and we can't see what's working.</div>
+  </div>
+
+  <div class="card" id="a">
+    <h2><span class="step">A</span> Publish 2 articles <span class="tag">~1h20</span></h2>
+    <p>Open the <a class="blue" href="./">Link-Building Guide</a> and follow it exactly. Pick <b>2 articles for today</b> from its 7-day schedule — different platforms, and try to cover a different country than yesterday.</p>
+    <ul>
+      <li>Fresh persona + fresh email + fresh IP per article (see the Guide's Step 1–2).</li>
+      <li>Publish in the article's own language only. Insert the exact anchor + URL shown on each article card.</li>
+      <li>Log each live post URL in the master log (Block E).</li>
+    </ul>
+    <div class="rule">Running low on ready articles? <b>Message Dominic</b> — he tops up the queue. Do <b>not</b> reuse or re-post an article you already published.</div>
+  </div>
+
+  <div class="card" id="b">
+    <h2><span class="step">B</span> Community engagement <span class="tag">~1h30</span></h2>
+    <p>Find real threads where people ask if Osanix / Ozalyn is legit, whether it works, or where to buy — and leave a genuinely helpful reply. A natural link only where it's allowed.</p>
+
+    <h3>Where to look (search these, pick 4–6 live threads)</h3>
+    <div class="cbar"><span class="lbl">Search strings — English / Quora / Reddit</span><button class="copy" data-copy="b-search-en">Copy</button></div>
+<div class="blk" id="b-search-en">site:quora.com osanix
+site:quora.com ozalyn
+"osanix" review does it work
+"ozalyn" weight loss legit
+site:reddit.com ozalyn
+natural ozempic alternative supplement forum</div>
+    <div class="rule"><b>Quora</b> = best for a natural in-context link. <b>Reddit</b> (r/loseit, r/Supplements, r/WeightLossAdvice) = <b>help only, usually NO link</b> — links get removed and can ban the account; just answer well and you can name the brand. Health/diet forums = fine to help, link only if the forum clearly allows signatures/links.</div>
+
+    <div class="cbar"><span class="lbl">Search strings — Dutch (NL) &amp; German (DE) forums</span><button class="copy" data-copy="b-search-nlde">Copy</button></div>
+<div class="blk" id="b-search-nlde">osanix ervaringen forum
+ozalyn betrouwbaar forum
+site:fok.nl afvallen supplement
+osanix erfahrungen forum
+ozalyn seriös forum
+site:gutefrage.net abnehmen kapseln</div>
+    <p class="sub">You don't speak Dutch/German — that's fine. When you find a matching NL or DE thread, paste the ready-made reply below. Change nothing except, if you like, the first few words so it fits the question.</p>
+
+    <h3>Ready replies — English</h3>
+    <div class="cbar"><span class="lbl">EN · "Is it legit?" → link: <code>osanix.shop/</code> · anchor "Osanix review"</span><button class="copy" data-copy="b-en-1">Copy</button></div>
+<div class="blk" id="b-en-1">I looked into Osanix (it's also sold as Ozalyn) before buying, so here's the honest version. It's a food supplement built around Garcinia Cambogia plus a few botanicals — not a drug, and not the same as Ozempic, so don't expect prescription-level results. Realistically it's a mild support for appetite and cravings alongside a calorie-aware diet, nothing magic. The main thing: buy only through the official store, so you get the real product, the current discount and the 30-day money-back guarantee — that's where the fakes and dodgy sellers catch people out. If you want the honest rundown of ingredients, price and what's realistic, this review covers it: https://osanix.shop/</div>
+    <div class="cbar"><span class="lbl">EN · "Does it work / where to buy?" → link: <code>osanix.shop/buy/</code> · anchor "official Osanix store"</span><button class="copy" data-copy="b-en-2">Copy</button></div>
+<div class="blk" id="b-en-2">Short answer from my digging: Osanix / Ozalyn is a plant-based weight-management capsule, not a miracle. Realistically it's a support — easier appetite control for some people over a 30–60 day run, best paired with a sensible diet and a bit of movement. You won't find it reliably in Boots or on Amazon; it's sold direct through the official store, which is actually the safer route (real product + the money-back option). I'd judge it on the ingredients, the real price and the return policy rather than the hype ads. The official store is here if you want to check it: https://osanix.shop/buy/</div>
+
+    <h3>Ready replies — Dutch (NL)</h3>
+    <div class="cbar"><span class="lbl">NL · "Betrouwbaar?" → link: <code>osanix.shop/nl/</code> · anchor "Osanix ervaringen"</span><button class="copy" data-copy="b-nl-1">Copy</button></div>
+<div class="blk" id="b-nl-1">Ik heb Osanix (wordt ook als Ozalyn verkocht) uitgezocht voordat ik het kocht, dus even eerlijk: het is een voedingssupplement op basis van Garcinia Cambogia — geen medicijn en niet hetzelfde als Ozempic, dus verwacht geen wonderen. Het kan hooguit een steuntje zijn bij eetlust en trek, samen met een caloriebewust dieet. Belangrijkste tip: bestel alléén via de officiële webshop, want daar krijg je het echte product, de korting en de 30 dagen niet-goed-geld-terug — dat is waar namaak en schimmige verkopers mensen te pakken nemen. Een nuchtere uitleg van de ingrediënten en de prijs staat hier: https://osanix.shop/nl/</div>
+    <div class="cbar"><span class="lbl">NL · "Waar kopen?" → link: <code>osanix.shop/nl/kopen/</code> · anchor "Osanix kopen"</span><button class="copy" data-copy="b-nl-2">Copy</button></div>
+<div class="blk" id="b-nl-2">Osanix / Ozalyn ligt niet bij Kruidvat, Etos of betrouwbaar op bol.com — het wordt rechtstreeks via de officiële webshop verkocht. Dat klinkt vervelend, maar is juist veiliger: alleen daar heb je zekerheid over het echte product plus de niet-goed-geld-terug van 30 dagen. Het is een supplement (Garcinia), dus zie het als ondersteuning, niet als vervanging voor een dieet. De prijs is nu ongeveer € 54,95 voor één pakket en € 36,65 per pakket bij het 3-pakket. Waar je het veilig koopt: https://osanix.shop/nl/kopen/</div>
+
+    <h3>Ready replies — German (DE)</h3>
+    <div class="cbar"><span class="lbl">DE · "Seriös oder Betrug?" → link: <code>osanix.shop/de/</code> · anchor "Osanix Erfahrungen"</span><button class="copy" data-copy="b-de-1">Copy</button></div>
+<div class="blk" id="b-de-1">Ich habe Osanix (wird auch als Ozalyn verkauft) vor dem Kauf geprüft, also ganz ehrlich: Es ist ein Nahrungsergänzungsmittel auf Basis von Garcinia Cambogia — kein Medikament und nicht dasselbe wie Ozempic, also keine Wunder erwarten. Es kann höchstens eine milde Unterstützung bei Appetit und Heißhunger sein, zusammen mit einer kalorienbewussten Ernährung. Wichtig: nur über den offiziellen Shop bestellen, dort gibt es das echte Produkt, den Rabatt und die 30-Tage-Geld-zurück-Garantie — genau da ziehen Fälschungen und dubiose Verkäufer Leute ab. Eine nüchterne Übersicht zu Inhaltsstoffen und Preis findest du hier: https://osanix.shop/de/</div>
+    <div class="cbar"><span class="lbl">DE · "Wo kaufen?" → link: <code>osanix.shop/de/kaufen/</code> · anchor "Osanix kaufen"</span><button class="copy" data-copy="b-de-2">Copy</button></div>
+<div class="blk" id="b-de-2">Osanix / Ozalyn gibt es nicht in der Apotheke oder zuverlässig bei Amazon — es wird direkt über den offiziellen Shop verkauft. Das ist tatsächlich der sichere Weg: nur dort hast du das echte Produkt und die 30-Tage-Geld-zurück-Option. Es ist ein Supplement (Garcinia), also eher eine Unterstützung als ein Diät-Ersatz. Der Preis liegt aktuell bei rund 54,95 € für eine Packung, im 3er-Paket günstiger pro Packung. Wo man es sicher kauft: https://osanix.shop/de/kaufen/</div>
+  </div>
+
+  <div class="card" id="c">
+    <h2><span class="step">C</span> Social bookmarking + profiles <span class="tag">~0h45</span></h2>
+    <p>Quick, safe links that help Google discover our pages. Do <b>8–10</b> a day, rotating which site, which page, and which description.</p>
+    <h3>Sites to rotate (create/login, then add the URL)</h3>
+    <p><code>Mix.com</code> · <code>Diigo</code> · <code>Scoop.it</code> · <code>Flipboard</code> · <code>Folkd</code> · <code>Pearltrees</code> · <code>Raindrop.io</code> · <code>Papaly</code> · <code>Start.me</code> · <code>Elink.io</code> · <code>Instapaper</code> · <code>Pocket</code> · <code>We Heart It</code> · <code>Symbaloo</code></p>
+    <h3>Pages to rotate (use a different one each time)</h3>
+    <div class="cbar"><span class="lbl">Destination URLs — spread them, don't only use the homepage</span><button class="copy" data-copy="c-urls">Copy</button></div>
+<div class="blk" id="c-urls">https://osanix.shop/
+https://osanix.shop/reviews/
+https://osanix.shop/buy/
+https://osanix.shop/nl/
+https://osanix.shop/nl/ervaringen/
+https://osanix.shop/de/
+https://osanix.shop/da/</div>
+    <h3>Descriptions (pick one, alternate)</h3>
+    <div class="cbar"><span class="lbl">Paste as the bookmark description / title</span><button class="copy" data-copy="c-desc">Copy</button></div>
+<div class="blk" id="c-desc">Osanix (also sold as Ozalyn) — an honest 2026 look at the Garcinia weight-management capsule: what's in it, the real price, and where to buy safely with a 30-day money-back guarantee.
+
+Is Osanix legit? A level-headed review of the Osanix / Ozalyn capsule — what it is, what's realistic, and the official store to avoid fakes.
+
+Osanix reviews & price 2026 — the natural weight-management supplement explained, without the hype. Ingredients, real cost, and the safe place to buy.</div>
+    <div class="cbar"><span class="lbl">Tags / keywords for the bookmark</span><button class="copy" data-copy="c-tags">Copy</button></div>
+<div class="blk" id="c-tags">osanix, ozalyn, weight loss, garcinia, supplement, reviews, 2026, afvallen, abnehmen</div>
+  </div>
+
+  <div class="card" id="d">
+    <h2><span class="step">D</span> Pinterest pins <span class="tag">~0h45</span></h2>
+    <p>Pinterest sends real visitors and helps Google find our pages. Make <b>5 pins</b> a day. First time only: create 3 boards — <em>Weight Loss Tips</em>, <em>Natural Supplements</em>, <em>Osanix Reviews</em>.</p>
+    <h3>Images to use (open the link, save the image, upload it)</h3>
+    <div class="cbar"><span class="lbl">Product images (already on our site)</span><button class="copy" data-copy="d-imgs">Copy</button></div>
+<div class="blk" id="d-imgs">https://osanix.shop/assets/img/box.webp
+https://osanix.shop/assets/img/pack3.webp
+https://osanix.shop/assets/img/pack1.webp
+https://osanix.shop/assets/img/pack2.webp
+https://osanix.shop/assets/img/pop.webp</div>
+    <h3>The 5 pins (title · description · where it links)</h3>
+    <div class="cbar"><span class="lbl">Pin 1 (EN)</span><button class="copy" data-copy="d1">Copy</button></div>
+<div class="blk" id="d1">Title: Osanix Reviews 2026: Is the Garcinia Capsule Legit?
+Description: An honest look at Osanix (also sold as Ozalyn) — what's in it, the real price, and where to buy safely with a 30-day money-back guarantee. #osanix #ozalyn #weightloss #garcinia
+Link: https://osanix.shop/reviews/</div>
+    <div class="cbar"><span class="lbl">Pin 2 (EN)</span><button class="copy" data-copy="d2">Copy</button></div>
+<div class="blk" id="d2">Title: Where to Buy Osanix Safely (Not Amazon)
+Description: Osanix / Ozalyn is sold direct through the official store — here's the real price and why buying direct is the safe route. #osanix #weightloss #supplement
+Link: https://osanix.shop/buy/</div>
+    <div class="cbar"><span class="lbl">Pin 3 (EN)</span><button class="copy" data-copy="d3">Copy</button></div>
+<div class="blk" id="d3">Title: Osanix vs the Hype: What's Realistic for Weight Loss?
+Description: It's a plant-based supplement, not a miracle and not Ozempic. Here's the level-headed take on results, ingredients and price. #osanix #ozalyn #garcinia #weightlosstips
+Link: https://osanix.shop/</div>
+    <div class="cbar"><span class="lbl">Pin 4 (NL — our best market)</span><button class="copy" data-copy="d4">Copy</button></div>
+<div class="blk" id="d4">Title: Osanix ervaringen: betrouwbaar of niet? (eerlijke test 2026)
+Description: Osanix (ook verkocht als Ozalyn) — een nuchtere blik op de Garcinia-afslankcapsule: ingrediënten, echte prijs en waar je veilig koopt met 30 dagen geld terug. #osanix #ozalyn #afvallen
+Link: https://osanix.shop/nl/</div>
+    <div class="cbar"><span class="lbl">Pin 5 (DE)</span><button class="copy" data-copy="d5">Copy</button></div>
+<div class="blk" id="d5">Title: Osanix Erfahrungen 2026: seriös oder Betrug?
+Description: Osanix (auch als Ozalyn verkauft) — ein ehrlicher Blick auf die Garcinia-Kapsel: Inhaltsstoffe, echter Preis und wo man sicher kauft, mit 30 Tagen Geld-zurück. #osanix #ozalyn #abnehmen
+Link: https://osanix.shop/de/</div>
+  </div>
+
+  <div class="card" id="e">
+    <h2><span class="step">E</span> Prospect + rank-check + log <span class="tag">~0h45</span></h2>
+
+    <h3>1 · Line up tomorrow (~15 min)</h3>
+    <p>Run the Block B search strings again and save <b>8–10 fresh thread URLs</b> into the log so you start fast tomorrow.</p>
+
+    <h3>2 · Rank check (~15 min)</h3>
+    <p>Open a fresh <b>incognito</b> window (or the proxy from the Guide, set to the country). Search each keyword, and note which of our pages shows up and roughly what position (1, 2, 3…). Log it.</p>
+    <div class="cbar"><span class="lbl">Keywords to check — NL / DE / EN / DK</span><button class="copy" data-copy="e-kw">Copy</button></div>
+<div class="blk" id="e-kw">NL: osanix betrouwbaar
+NL: osanix ervaringen
+NL: osanix pillen
+NL: osanix afvallen
+NL: wat is osanix
+NL: osanix kopen
+DE: osanix erfahrungen
+DE: ozalyn fake oder echt
+DE: osanix seriös
+DE: osanix kaufen
+EN: osanix reviews
+EN: does osanix work
+EN: osanix trustpilot
+DK: osanix anmeldelse</div>
+
+    <h3>3 · Update the master log</h3>
+    <p>One row per thing you did today (article, reply, bookmark, pin, rank check). Copy this header into a Google Sheet the first time.</p>
+    <div class="cbar"><span class="lbl">Master log header row</span><button class="copy" data-copy="e-log">Copy</button></div>
+<div class="blk" id="e-log">Date | Block | Platform / Site | Action | Live URL | Anchor / Keyword | Account / Email | Geo | Position | Notes</div>
+  </div>
+
+  <div class="card" id="done">
+    <h2><span class="step">✓</span> End-of-day checklist</h2>
+    <ul class="chk">
+      <li>2 articles published (fresh account/IP each) + logged</li>
+      <li>4–6 helpful replies posted — links only where allowed — + logged</li>
+      <li>8–10 bookmarks/profiles saved (pages &amp; descriptions rotated) + logged</li>
+      <li>5 Pinterest pins live + logged</li>
+      <li>8–10 target threads saved for tomorrow</li>
+      <li>Rank positions checked + logged</li>
+      <li>Never went over 2 articles / kept everything natural &amp; honest</li>
+    </ul>
+    <div class="rule ok">Do this every day and the numbers climb on their own. Consistency is the whole game.</div>
+  </div>
+
+  <p class="foot">Private working document — do not share outside the team. Post only in each item's own language, on its own fresh account/IP. Questions or out of articles → message Dominic.</p>
+</div>
+
+<textarea id="scratch" style="position:absolute;left:-9999px;top:-9999px" aria-hidden="true"></textarea>
+<script>
+(function(){
+  function flash(b){ var o=b.getAttribute("data-orig")||b.textContent; b.setAttribute("data-orig",o); b.textContent="✓ Copied"; b.classList.add("ok"); setTimeout(function(){b.textContent=o;b.classList.remove("ok")},1400) }
+  function copyPlain(t){ if(navigator.clipboard&&navigator.clipboard.writeText){return navigator.clipboard.writeText(t).catch(function(){return legacyPlain(t)})} return legacyPlain(t) }
+  function legacyPlain(t){ return new Promise(function(res){ var a=document.getElementById("scratch"); a.value=t; a.focus(); a.select(); try{document.execCommand("copy")}catch(e){} a.blur(); res() }) }
+  document.addEventListener("click",function(e){ var b=e.target.closest("button.copy"); if(!b)return;
+    var t=document.getElementById(b.getAttribute("data-copy")).textContent; copyPlain(t).then(function(){flash(b)}) });
+})();
+</script>
+</body>
+</html>
